@@ -1,0 +1,8 @@
+[
+  {
+    "outputFileName": "wwwroot/css/custom/layout.min.css",
+    "inputFiles": [
+      "wwwroot/css/custom/layout.css"
+    ]
+  }
+]

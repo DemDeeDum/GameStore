@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@(ViewBag.Title is { } ? ViewBag.Title : GameStore.WEB.Service.Config.CompanyName)</title>
+    @await Html.PartialAsync("MetaTagsPartial")
+    @await Html.PartialAsync("CssPartial")
+    <link rel="icon" href="~/images/game-store.ico" type="image/x-icon" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column">
+    <header>
+        @await Html.PartialAsync("HeaderPartial")
+    </header>
+    <main class="flex-lg-grow-1">
+        @RenderBody()
+    </main>
+    <footer>
+        @await Html.PartialAsync("FooterPartial")
+    </footer>
+    @await Html.PartialAsync("ScriptsPartial")
+</body>
+</html>

@@ -1,0 +1,12 @@
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\bin\Debug\netcoreapp3.1\GameStore.BLL.deps.json
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\bin\Debug\netcoreapp3.1\GameStore.BLL.dll
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\bin\Debug\netcoreapp3.1\GameStore.BLL.pdb
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\obj\Debug\netcoreapp3.1\GameStore.BLL.csprojAssemblyReference.cache
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\obj\Debug\netcoreapp3.1\GameStore.BLL.AssemblyInfoInputs.cache
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\obj\Debug\netcoreapp3.1\GameStore.BLL.AssemblyInfo.cs
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\obj\Debug\netcoreapp3.1\GameStore.BLL.dll
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\obj\Debug\netcoreapp3.1\GameStore.BLL.pdb
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\bin\Debug\netcoreapp3.1\GameStore.DAL.dll
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\bin\Debug\netcoreapp3.1\GameStore.DAL.pdb
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\obj\Debug\netcoreapp3.1\GameStore.BLL.csproj.CopyComplete
+C:\Users\Дима\Desktop\GameStore\GameStore.BLL\obj\Debug\netcoreapp3.1\GameStore.BLL.csproj.CoreCompileInputs.cache
