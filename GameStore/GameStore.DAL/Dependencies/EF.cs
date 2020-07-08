@@ -19,7 +19,7 @@ namespace GameStore.DAL.Dependencies
 
         private void IdentitySettings(IServiceCollection services)
         {
-            services.AddIdentityCore<User>(opts =>
+            services.AddIdentity<User, IdentityRole>(opts =>
                 {
                     opts.User.RequireUniqueEmail = true;
                     opts.Password.RequiredLength = 6;
@@ -28,7 +28,8 @@ namespace GameStore.DAL.Dependencies
                     opts.Password.RequireLowercase = true;
                     opts.Password.RequireUppercase = true;
                 })
-            .AddEntityFrameworkStores<GameStoreContext>();
+            .AddEntityFrameworkStores<GameStoreContext>()
+            .AddDefaultTokenProviders();
         }
     }
 }

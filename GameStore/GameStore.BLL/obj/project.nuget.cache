@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3k6FqhvDUaKLmgqtktlrw7jP8gAZhPHTDhN0u16sTh0+YVxiRuAQRm1Zfrrsdyb/Q26CnS3PRn46VYA9oyUedg==",
+  "dgSpecHash": "lTwPljOrqA8n8SV09AM9ttgKn9TjDVYbUMg2F0LU5MZXxoCPHhKkoxIM1E+oIEWxNlu/O4wmycDC10TGKpmiJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj",
+  "projectFilePath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Дима\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Дима\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

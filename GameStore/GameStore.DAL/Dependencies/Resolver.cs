@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using GameStore.DAL.ApplicationContext.Classes;
+using GameStore.DAL.Entities;
+using GameStore.DAL.Migrations;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;

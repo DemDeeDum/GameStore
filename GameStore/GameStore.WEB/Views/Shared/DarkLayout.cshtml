@@ -4,6 +4,7 @@
     <title>@(ViewBag.Title is { } ? ViewBag.Title : GameStore.WEB.Service.Config.CompanyName)</title>
     @await Html.PartialAsync("MetaTagsPartial")
     @await Html.PartialAsync("CssPartial")
+    @RenderSection("Styles", false)
     <link rel="icon" href="~/images/game-store.ico" type="image/x-icon" asp-append-version="true" />
 </head>
 <body class="d-flex flex-column">

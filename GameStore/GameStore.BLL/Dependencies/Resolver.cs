@@ -1,4 +1,5 @@
 ﻿using GameStore.DAL.Dependencies;
+using GameStore.DAL.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;

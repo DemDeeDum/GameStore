@@ -12,4 +12,9 @@
     <ProjectReference Include="..\GameStore.DAL\GameStore.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Classes\" />
+    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+
 </Project>

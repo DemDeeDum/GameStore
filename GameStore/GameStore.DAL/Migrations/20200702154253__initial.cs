@@ -183,6 +183,21 @@ namespace GameStore.DAL.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "d640fbe2-73a2-40ab-bf22-27df5fc9918a", "18aaf2ba-12c6-4008-952e-6df64428beb4", "admin", "ADMIN" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "32103412-d5a4-4186-ba71-9ca25a0f3d64", 0, "8643df65-f9bf-468f-87fc-a6ee5a53a319", "my@email.com", true, false, null, "MY@EMAIL.COM", "MAINADMIN", "AQAAAAEAACcQAAAAEB7Dpo9S3+Iik+9jR3DiWb8x7LuiWV0OWAg2Iu4YDmGkzqAtpOURcIPePpttDoIEzQ==", null, false, "", false, "MainAdmin" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "UserId", "RoleId" },
+                values: new object[] { "32103412-d5a4-4186-ba71-9ca25a0f3d64", "d640fbe2-73a2-40ab-bf22-27df5fc9918a" });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",

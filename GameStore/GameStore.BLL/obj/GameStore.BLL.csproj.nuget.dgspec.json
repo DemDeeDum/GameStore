@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj": {}
+    "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj": {
+    "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj",
         "projectName": "GameStore.BLL",
-        "projectPath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj",
+        "projectPath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.BLL\\GameStore.BLL.csproj",
         "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.BLL\\obj\\",
+        "outputPath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj": {
-                "projectPath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj"
+              "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj": {
+                "projectPath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj"
               }
             }
           }
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj": {
+    "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj",
         "projectName": "GameStore.DAL",
-        "projectPath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj",
+        "projectPath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DAL\\GameStore.DAL.csproj",
         "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.DAL\\obj\\",
+        "outputPath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -112,6 +112,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.3, )"

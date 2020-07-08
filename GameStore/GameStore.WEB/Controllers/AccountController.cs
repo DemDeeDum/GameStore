@@ -5,52 +5,52 @@ using System.Threading.Tasks;
 using GameStore.WEB.ViewComponents;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using GameStore.BLL.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using AutoMapper;
 using GameStore.BLL.Models.BusinessModels;
-using GameStore.BLL.Services.Classes;
+using GameStore.DAL.Entities;
+using GameStore.BLL.Models.DTOs;
 
 namespace GameStore.WEB.Controllers
 {
     [Authorize]
     public class AccountController : Controller
     {
-        private readonly IAccountService accountService;
-        private readonly IMapper mapper;
+        private readonly SignInManager<User> signInManager;
+        private readonly UserManager<User> userManager;
 
         public AccountController(
-            IMapper _mapper,
-            SignInManager<IdentityUser> _signInManager,
-            UserManager<IdentityUser> _userManager
+            SignInManager<User> _signInManager,
+            UserManager<User> _userManager
             )
         {
-            accountService = new AccountService(_userManager, _signInManager);
-            mapper = _mapper;
+            signInManager = _signInManager;
+            userManager = _userManager;
         }
 
-        [AllowAnonymous]
         [HttpGet]
-        public IActionResult Login(string returnURL)
+        [AllowAnonymous]
+        public IActionResult Login(string returnUrl)
         {
-            ViewBag.ReturnURL = returnURL;
+            ViewBag.returnUrl = returnUrl;
             return View(new LoginViewModel());
         }
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(LoginViewModel model, string returnURL)
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if(ModelState.IsValid )
-            { 
-                if(await accountService.UserNameExistsAsync(model.UserName))
+            {
+                var user = await userManager.FindByNameAsync(model.UserName);
+                if(user is { })
                 {
-                    await accountService.SignOutAsync();
+                    await signInManager.SignOutAsync();
                     Microsoft.AspNetCore.Identity.SignInResult result =
-                        await accountService.SignInAsync(mapper.Map<LoginModel>(model));
+                        await signInManager.PasswordSignInAsync(user, model.Password, model.RemeberMe, false);
                     if(result.Succeeded)
                     {
-                        return Redirect(returnURL ?? "/");
+                        return Redirect(returnUrl ?? "/");
                     }
                 }
                 ModelState.AddModelError(nameof(LoginViewModel.UserName), "Login or password is not correct");
@@ -61,7 +61,7 @@ namespace GameStore.WEB.Controllers
         [Authorize]
         public async Task<IActionResult> Logout()
         {
-            await accountService.SignOutAsync();
+            await signInManager.SignOutAsync();
             return RedirectToAction("Main", "Public");
         }
     }

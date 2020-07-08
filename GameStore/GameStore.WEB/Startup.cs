@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 
 namespace GameStore.WEB
 {
@@ -55,6 +56,12 @@ namespace GameStore.WEB
             })
                 .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0)
                 .AddSessionStateTempDataProvider();
+
+           services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddDe
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -75,9 +82,8 @@ namespace GameStore.WEB
             
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapAreaControllerRoute("admin", "Admin", "{controller=Public}/{action=Main}/{id?}");
-                endpoints.MapControllerRoute("admin", "{area:exists}/{controller=Public}/{action=Main}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Public}/{action=Main}/{id?}");
+                endpoints.MapAreaControllerRoute("admin", "Admin", "{controller=Admin}/{action=Index}/{id?}");
             });
         }
     }

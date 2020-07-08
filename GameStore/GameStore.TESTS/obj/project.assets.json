@@ -3476,11 +3476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.TESTS\\GameStore.TESTS.csproj",
+      "projectUniqueName": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.TESTS\\GameStore.TESTS.csproj",
       "projectName": "GameStore.TESTS",
-      "projectPath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.TESTS\\GameStore.TESTS.csproj",
+      "projectPath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.TESTS\\GameStore.TESTS.csproj",
       "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Дима\\Desktop\\GameStore\\GameStore.TESTS\\obj\\",
+      "outputPath": "C:\\Users\\Дима\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.TESTS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3541,14 +3541,6 @@
           {
             "name": "Microsoft.AspNetCore.App.Ref",
             "version": "[3.1.2, 3.1.2]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
           }
         ],
         "frameworkReferences": {
